@@ -24,7 +24,7 @@ __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
 
-led = port.PG6
+led = port.PG7
 
 gpio.init()
 gpio.setcfg(led, gpio.OUTPUT)
@@ -33,7 +33,7 @@ try:
     print ("Press CTRL+C to exit")
     while True:
         gpio.output(led, 1)
-	print "led set 1 \r\n"
+        print "led set 1 \r\n"
         sleep(2)
         gpio.output(led, 0)
 	print "led set 0 \r\n"
